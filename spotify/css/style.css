@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --nav-bg: #080b12;
+    --nav-grey: #b4b5b7;
+    --vert-menu-home: #d2d2d2;
+    --vert-menu-plus: #a3a3a3;
+    --vert-menu-text: #6f6f6f;
+    --main-bg: #141922;
+    --main-text: #797b80;
+    --footer-bg: #282828;
+    --scroll-bar-light: #c8c8c8;
+    --scroll-bar-dark: #7f7f7f;
+    --line: #92ce27;
+}
+
