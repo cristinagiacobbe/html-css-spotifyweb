@@ -3,13 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* #region utilities */
 :root{
-    --nav-bg: #080b12;
-    --nav-grey: #b4b5b7;
-    --vert-menu-home: #d2d2d2;
-    --vert-menu-plus: #a3a3a3;
-    --vert-menu-text: #6f6f6f;
+    --header-bg: #080b12;
+    --header-grey: #b4b5b7;
+    --nav-menu-home: #d2d2d2;
+    --nav-menu-plus: #a3a3a3;
+    --nav-menu-text: #6f6f6f;
     --main-bg: #141922;
     --main-text: #797b80;
     --footer-bg: #282828;
@@ -18,3 +18,61 @@
     --line: #92ce27;
 }
 
+.d-flex{
+    display: flex;
+}
+/* #endregion utilities */
+
+header .container{
+    height: 60px;     
+    Width: 100vw;       
+    justify-content: end;
+    align-items: center;
+    background-color: var(--header-bg);    
+}
+
+nav .container{
+    width: 15%;
+    height: 100Vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu{
+    justify-content: center;
+}
+
+
+
+
+/* #region debug */
+
+.debug .nav-top{
+    height: 400px;
+    width: 100%;
+    background-color: lightgreen;
+}
+
+.debug .nav-bottom{
+    height: 50px;
+    width: 100%;
+    background-color: lightgreen;
+}
+
+.debug .up-grade{
+    width: 100px;
+    height: 100%;
+    background-color: lightgreen;
+}
+
+.debug .menu{
+    width: 100Wv;
+    height: 50px;
+    background-color: chocolate;
+   
+}
+/* #endregion debug */
