@@ -41,12 +41,23 @@ nav .container{
     flex-direction: column;
     justify-content: space-between;
 }
-
+main .container{
+    margin-left: 15%;
+}
 .menu{
     justify-content: center;
 }
 
+main h1{
+    margin: 1rem;
+}
 
+.col-2{
+    width: calc(100% / 12 * 2);
+}
+.card{
+    padding: 1rem;
+}
 
 
 /* #region debug */
@@ -68,11 +79,23 @@ nav .container{
     height: 100%;
     background-color: lightgreen;
 }
+.debug main .container{
+    width: 1000wv;
+    height: 1000px;
+    background-color: violet;   
+}
 
 .debug .menu{
     width: 100Wv;
     height: 50px;
-    background-color: chocolate;
-   
+    background-color: chocolate;   
 }
+
+.debug .card{
+    min-height: 100px;
+    border: 1px solid black;
+}    
+
+
+
 /* #endregion debug */
