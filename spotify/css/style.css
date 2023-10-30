@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* #region utilities */
 :root{
     --header-bg: #080b12;
@@ -21,83 +22,114 @@
 .d-flex{
     display: flex;
 }
+
+.ml100{
+    margin-left: 100px;
+}
 /* #endregion utilities */
 
-header .container{
-    height: 60px;     
-    Width: 100vw;       
-    justify-content: end;
-    align-items: center;
-    background-color: var(--header-bg);    
-}
-
-nav .container{
-    width: 15%;
-    height: 100Vh;
+/* #region nav */
+.nav-container{
+    width: 100px;   
+    background-color: rgb(71, 71, 6);
     position: absolute;
     top: 0;
     left: 0;
-    background-color: black;
     flex-direction: column;
     justify-content: space-between;
 }
-main .container{
-   /*  margin-left: 15%;
-    width: calc(100wv - 15% ); */
+/* #endregion nav */
+
+/* #region header */
+.header-container{
+    width: 100%;
+    height: 60px;
+    background-color: lightgreen;
+    justify-content: end;
+    align-items: center;
+}
+/* #endregion header */
+
+/* #region main */
+.main-container{
+    width: 100%;    
+    background-color: rgb(249, 185, 90);   
+    overflow-y: auto;
 }
 
-.menu{
-    justify-content: center;
+.row-menu{
+width: calc(100% - 100px);
 }
 
-main h1, h5{
-    margin: 1rem;
+.horizontal-menu{
+    width: 50%;
+    margin: auto;
+    justify-content: space-between;
 }
 
 .col-2{
     width: calc(100% / 12 * 2);
+    margin-top: 20px;
+    height: 150px;
 }
-.card{
-    padding: 1rem;
+
+main h1{
+    padding-top: 20px;
 }
+
+/* #endregion main */
+
+/* #region footer */
+
+.foot-container{
+    width: 100%;
+    height: 60px;
+    background-color: lightcoral;
+    justify-content: space-between;
+}
+/* #endregion footer */
 
 
 /* #region debug */
-
 .debug .nav-top{
-    height: 400px;
     width: 100%;
-    background-color: lightgreen;
+    height: 300px;
+    background-color: lightslategray;
 }
-
 .debug .nav-bottom{
-    height: 50px;
     width: 100%;
-    background-color: lightgreen;
+    height: 50px;
+    background-color: lightslategray;
 }
-
-.debug .up-grade{
+.debug .row-menu{
+    border: 1px solid black;     
+}
+.debug .horizontal-menu{    
+    height: 100%;    
+    border: 1px solid red;
+}
+.debug .main-container{
+    height: calc(100vh - 120px);
+}
+.debug .nav-container{
+    height: calc(100vh - 60px);
+}
+.debug .col-2{
+    border: 1px solid black;
+}
+.debug .left-footer{
     width: 100px;
     height: 100%;
-    background-color: lightgreen;
+    background-color: rgb(54, 52, 52);
 }
-.debug main .container{
-    width: 1000wv;
-    height: 1000px;
-    background-color: violet;   
+.debug .central-footer{
+    width: 200px;
+    height: 100%;
+    background-color: rgb(68, 62, 62);
 }
-
-.debug .menu{
-    width: 100Wv;
-    height: 50px;
-    background-color: chocolate;   
+.debug .right-footer{
+    width: 100px;
+    height: 100%;
+    background-color: rgb(46, 40, 40);
 }
-
-.debug .card{
-    min-height: 100px;
-    border: 1px solid black;
-}    
-
-
-
 /* #endregion debug */
