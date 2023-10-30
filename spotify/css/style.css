@@ -133,3 +133,21 @@ main h1{
     background-color: rgb(46, 40, 40);
 }
 /* #endregion debug */
+
+/* #region responsiveness */
+@media screen and (max-width: 768px) {
+    .row{
+        flex-wrap: wrap;
+    }
+    .col-md-3{
+        width: calc(100% / 12 * 3);
+    }
+    .horizontal-menu{
+        width: 90%;
+    }
+}
+
+
+
+
+/* #endregion responsiveness */
