@@ -147,7 +147,14 @@ main h1{
     }
 }
 
-
+@media screen and (max-width: 480px) {
+        .col-s-6{
+        width: calc(100% / 12 * 6);
+    }
+    .horizontal-menu{
+        flex-wrap: wrap;
+    }
+}
 
 
 /* #endregion responsiveness */
