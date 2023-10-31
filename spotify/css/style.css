@@ -128,9 +128,19 @@ hr{
 .header-container{
     width: 100%;
     height: 60px;
-    background-color: lightgreen;
+    background-color: var(--header-bg);
     justify-content: end;
     align-items: center;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: x-small;
+    border: 1px solid var(--header-grey);
+    border-radius: 20px;
+    padding: 10px 30px;
 }
 /* #endregion header */
 
