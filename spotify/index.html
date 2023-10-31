@@ -7,95 +7,140 @@
     <title>Spotify-web</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;">
 </head>
 
 <body class="debug">
 
     <!-- nav - vertical menu -->
-            <nav>
-                <div class="nav-container d-flex">
-                    <div class="nav-top"></div>
-                    <div class="nav-bottom"></div>
+    <nav>
+        <div class="nav-container d-flex">
+            <div class="nav-top">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="logo">
                 </div>
-            </nav>
+                <div class="nav-cta">
+                    <div class="cta home d-flex">
+                        <img src="./img/home.svg" alt="home">
+                        <h5>Home</h5>
+                    </div>
+                    <div class="cta search d-flex">
+                        <img src="./img/search.svg" alt="search">
+                        <h5>Cerca</h5>
+                    </div>
+                    <div class="cta library d-flex">
+                        <img src="./img/libreria.svg" alt="library">
+                        <h5>La tua libreria</h5>
+                    </div>
+                </div>
+                <h5 id="playlist">playlist</h5>
+                <div class="new-pl d-flex">
+                    <i class="fa-solid fa-plus"></i>
+                    <h5>Crea Playlist</h5>
+                </div>
+                <ul>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                </ul>
+
+            </div>
+            <div class="nav-bottom">
+                <div class="app d-flex">
+                    <img src="./img/download.svg" alt="download">
+                    <h5>Installa app</h5>
+                </div>
+                <hr>
+                <div class="profile d-flex">
+                    <img src="./img/profile.svg" alt="profile">
+                    <h5>John Doe</h5>
+                </div>
+            </div>
+        </div>
+    </nav>
     <!-- header (horizontal bar) -->
-            <header>
-                <div class="header-container d-flex">
-                    <div class="up-grade">
-                        <a href="">Effettua l'upgrade</a>
-                    </div>
+    <header>
+        <div class="header-container d-flex">
+            <div class="up-grade">
+                <a href="">Effettua l'upgrade</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <!-- main - horizontal menu -->
+            <div class="row-menu ml100">
+                <div class="horizontal-menu d-flex ml100">
+                    <div class="hor-menu-tag">in evidenza</div>
+                    <div class="hor-menu-tag">podcast</div>
+                    <div class="hor-menu-tag">classifiche</div>
+                    <div class="hor-menu-tag">generi e mood</div>
+                    <div class="hor-menu-tag">nuove uscite</div>
+                    <div class="hor-menu-tag">scopri</div>
                 </div>
-            </header>
-    
-            <main>
-                <div class="main-container">
-    <!-- main - horizontal menu -->
-                    <div class="row-menu ml100">
-                    <div class="horizontal-menu d-flex ml100">
-                        <div class="hor-menu-tag">in evidenza</div>
-                        <div class="hor-menu-tag">podcast</div>
-                        <div class="hor-menu-tag">classifiche</div>
-                        <div class="hor-menu-tag">generi e mood</div>
-                        <div class="hor-menu-tag">nuove uscite</div>
-                        <div class="hor-menu-tag">scopri</div>
-                    </div>
+            </div>
+            <!-- first row -->
+            <h1 class="ml100">Recently played</h1>
+            <div class="row d-flex ml100">
+                <div class="col-2 col-md-3 col-s-6">
+                    <div class="card">Colonna 1</div>
                 </div>
-    <!-- first row -->
-                    <h1 class="ml100">Recently played</h1>
-                    <div class="row d-flex ml100">
-                        <div class="col-2 col-md-3 col-s-6">
-                            <div class="card">Colonna 1</div>
-                        </div>
-                        <div class="col-2 col-md-3 col-s-6">
-                            <div class="card">Colonna 2</div>
-                        </div>
-                        <div class="col-2 col-md-3 col-s-6">
-                            <div class="card">Colonna 3</div>
-                        </div>
-                        <div class="col-2 col-md-3 col-s-6">
-                            <div class="card">Colonna 4</div>
-                        </div>
-                        <div class="col-2 col-md-3 col-s-6">
-                            <div class="card">Colonna 5</div>
-                        </div>
-                        <div class="col-2 col-md-3 col-s-6">
-                            <div class="card">Colonna 6</div>
-                        </div>
-                    </div>
-    <!-- second row -->
-                    <h1 class="ml100">Creato per John Doe</h1>
-                    <h4 class="ml100">Più ascolti</h4>
-                    <div class="row d-flex ml100">
-                        <div class="col-2">
-                            <div class="card">Colonna 1</div>
-                        </div>
-                        <div class="col-2">
-                            <div class="card">Colonna 2</div>
-                        </div>
-                    </div>
-    <!-- third row -->
-                    <h1 class="ml100">Artisti più popolari</h1>
-                    <h4 class="ml100">Più ascolti</h4>
-                    <div class="row d-flex ml100">
-                        <div class="col-2">
-                            <div class="card">Colonna 1</div>
-                        </div>
-                        <div class="col-2">
-                            <div class="card">Colonna 2</div>
-                        </div>
-                    </div>
-            </main>
+                <div class="col-2 col-md-3 col-s-6">
+                    <div class="card">Colonna 2</div>
+                </div>
+                <div class="col-2 col-md-3 col-s-6">
+                    <div class="card">Colonna 3</div>
+                </div>
+                <div class="col-2 col-md-3 col-s-6">
+                    <div class="card">Colonna 4</div>
+                </div>
+                <div class="col-2 col-md-3 col-s-6">
+                    <div class="card">Colonna 5</div>
+                </div>
+                <div class="col-2 col-md-3 col-s-6">
+                    <div class="card">Colonna 6</div>
+                </div>
+            </div>
+            <!-- second row -->
+            <h1 class="ml100">Creato per John Doe</h1>
+            <h4 class="ml100">Più ascolti</h4>
+            <div class="row d-flex ml100">
+                <div class="col-2">
+                    <div class="card">Colonna 1</div>
+                </div>
+                <div class="col-2">
+                    <div class="card">Colonna 2</div>
+                </div>
+            </div>
+            <!-- third row -->
+            <h1 class="ml100">Artisti più popolari</h1>
+            <h4 class="ml100">Più ascolti</h4>
+            <div class="row d-flex ml100">
+                <div class="col-2">
+                    <div class="card">Colonna 1</div>
+                </div>
+                <div class="col-2">
+                    <div class="card">Colonna 2</div>
+                </div>
+            </div>
+    </main>
     <!-- footer -->
-            <footer>
-                <div class="foot-container d-flex">
-                    <div class="left-footer"></div>
-                    <div class="central-footer"></div>
-                    <div class="right-footer"></div>
-                </div>
-            </footer>
-    
-    
-    
-        </body>
-    
-    </html>
+    <footer>
+        <div class="foot-container d-flex">
+            <div class="left-footer"></div>
+            <div class="central-footer"></div>
+            <div class="right-footer"></div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
