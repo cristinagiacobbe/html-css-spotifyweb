@@ -52,7 +52,7 @@
     align-items: center;
 }
 .cta img{
-    width: 10%;   
+    width: 10%;     
 }
 
 .cta h5{
@@ -147,12 +147,13 @@ header a{
 /* #region main */
 .main-container{
     width: 100%;    
-    background-color: rgb(249, 185, 90);   
+    background-color: var(--main-bg);   
     overflow-y: auto;
 }
 
 .row-menu{
-width: calc(100% - 200px);
+    width: calc(100% - 200px);
+    margin-top: 20px;
 }
 
 .horizontal-menu{
@@ -161,16 +162,40 @@ width: calc(100% - 200px);
     justify-content: space-between;
 }
 
+.hor-menu-tag{
+    text-transform: uppercase;
+    font-size: x-small;
+    font-weight: bold;
+    color: var(--main-text);    
+}
+
+main hr{
+    margin: auto;
+    width: 20px;
+    height: 5px;
+    color: var(--line);
+}
 .col-2{
     width: calc(100% / 12 * 2);
-    margin-top: 20px;
-    height: 150px;
+    margin-top: 20px;    
+}
+.card img{
+    width: 100%;
+    padding: 5px;
 }
 
-main h1{
+.circled img{
+    border-radius: 50%;
+}
+main h2{
     padding-top: 20px;
+    color: white;
 }
-
+main h4{
+    color: var(--main-text);
+    padding-top: 10px;
+    font-weight: lighter;
+}
 /* #endregion main */
 
 /* #region footer */
@@ -200,7 +225,7 @@ main h1{
 }
 .debug .horizontal-menu{    
     height: 100%;    
-    border: 1px solid red;
+   /*  border: 1px solid red; */
 }
 .debug .main-container{
     height: calc(100vh - 120px);
@@ -210,6 +235,7 @@ main h1{
 }
 .debug .col-2{
     border: 1px solid black;
+   /*  height: 150px; */
 }
 .debug .left-footer{
     width: 100px;
