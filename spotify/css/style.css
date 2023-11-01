@@ -29,6 +29,9 @@
     margin-left: 200px;
 }
 
+.t-ac{
+    text-align: center;
+}
 /* #endregion utilities */
 
 /* #region nav */
@@ -191,7 +194,15 @@ main hr {
     width: 100%;
     padding: 5px;
 }
+main .title{
+    color: white;
+    font-weight: bold;
+}
 
+main .subtitle{
+    color: var(--main-text);
+    padding-top: 5px;
+}
 .circled img {
     border-radius: 50%;
 }
