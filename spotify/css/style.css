@@ -210,7 +210,7 @@ main h4{
 footer {
     color: white;
 }
-
+/* left-footer */
 .left-footer {
     align-items: center;
     padding: 5px;
@@ -231,10 +231,55 @@ footer .fa-folder {
     padding: 0 10px;
 }
 
+/* central footer */
+.central-footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.central-foot {
+    align-items: center;
+    padding: 10px;
+}
 
+.ctr-icons {
+    padding-right: 20px;
+}
 
+.time-bar {
+    align-items: center;
+}
 
+.time-bar span {
+    font-size: x-small;
+    padding: 0 5px;
+}
+
+.volume-borders{
+    position: relative;
+}
+
+.under-border {
+    width: 300px;
+}
+
+.cf.up-border {
+    width: 100px;
+}
+
+.cf.under-border {
+    border: 3px solid gray;
+    border-radius: 5px;
+}
+
+.up-border {
+    border: 3px solid white;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 /* #endregion footer */
 
 
@@ -272,7 +317,7 @@ footer .fa-folder {
     background-color: rgb(54, 52, 52);
 }
 .debug .central-footer{
-    width: 500px;
+    width: 5200px;
     height: 100%;
     background-color: rgb(68, 62, 62);
 }
