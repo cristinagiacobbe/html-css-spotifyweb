@@ -25,7 +25,7 @@
     display: flex;
 }
 
-.ml100 {
+.ml200 {
     margin-left: 200px;
 }
 
@@ -36,7 +36,8 @@
 
 /* #region nav */
 .nav-container {
-    width: 200px;
+    width: 200px;    
+    height: calc(100% - 60px);
     background-color: black;
     position: absolute;
     top: 0;
@@ -138,7 +139,7 @@ hr {
     height: 60px;
     background-color: var(--header-bg);
     justify-content: end;
-    align-items: center;
+    align-items: center;    
 }
 
 header a {
@@ -156,6 +157,7 @@ header a {
 /* #region main */
 .main-container {
     width: 100%;
+    height: calc(100vh - 60px);
     background-color: var(--main-bg);
     overflow-y: auto;
 }
@@ -335,14 +337,12 @@ footer .fa-folder {
 /* #region debug */
 .debug .nav-top {
     width: 100%;
-    height: 300px;
-    /* background-color: lightslategray; */
+    height: 300px;    
 }
 
 .debug .nav-bottom {
     width: 100%;
-    height: 70px;
-    /*  background-color: lightslategray; */
+/*     height: 70px; */   
 }
 
 .debug .row-menu {
@@ -352,14 +352,6 @@ footer .fa-folder {
 .debug .horizontal-menu {
     height: 100%;
     /*  border: 1px solid red; */
-}
-
-.debug .main-container {
-    height: calc(100vh - 120px);
-}
-
-.debug .nav-container {
-    height: calc(100vh - 60px);
 }
 
 .debug .col-2 {
@@ -374,7 +366,7 @@ footer .fa-folder {
 }
 
 .debug .central-footer {
-    width: 5200px;
+    width: 200px;
     height: 100%;
     /*    background-color: rgb(68, 62, 62); */
 }
