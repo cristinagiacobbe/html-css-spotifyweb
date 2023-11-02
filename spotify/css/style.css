@@ -53,12 +53,17 @@
 
 .cta {
     color: white;
-    margin: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
     align-items: center;
 }
 
 .cta img {
     width: 10%;
+}
+
+.cta.home{
+    border-left: 3px solid var(--line);
 }
 
 .cta h5 {
@@ -162,31 +167,27 @@ header a {
     overflow-y: auto;
 }
 
-.row-menu {
+.cont-menu {
     width: calc(100% - 200px);
     margin-top: 20px;
 }
 
 .horizontal-menu {
-    width: 50%;
+    width: 60%;
     margin: auto;
     justify-content: space-between;
 }
 
-.hor-menu-tag {
+.horizontal-menu .col-2 {
     text-transform: uppercase;
     font-size: x-small;
     font-weight: bold;
     color: var(--main-text);
 }
 
-main hr {
-    margin: auto;
-    width: 20px;
-    height: 5px;
-    color: var(--line);
+#underline{
+    border-bottom: 2px solid var(--line);
 }
-
 .col-2 {
     width: calc(100% / 12 * 2);
     margin-top: 20px;
@@ -380,17 +381,23 @@ footer .fa-folder {
 /* #endregion debug */
 
 /* #region responsiveness */
-@media screen and (max-width: 768px) {
-    .row {
-        flex-wrap: wrap;
-    }
 
+
+@media screen and (max-width: 878px) { 
+    .row{
+        flex-wrap: wrap;
+    } 
     .col-md-3 {
         width: calc(100% / 12 * 3);
     }
-
-    .horizontal-menu {
-        width: 90%;
+    .horizontal-menu { 
+        flex-wrap: wrap;
+    }
+    .col-20{
+        width: 20%;
+    }
+    .last{
+        margin: auto;
     }
 }
 
