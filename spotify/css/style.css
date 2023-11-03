@@ -52,12 +52,19 @@
 }
 
 .cta {
-    color: white;
+    color: var(--nav-menu-text);
     padding-left: 10px;
     padding-bottom: 5px;
     align-items: center;
 }
 
+.cta:hover{
+    color: white;
+}
+
+.home h5{
+    color: white;
+}
 .cta img {
     width: 10%;
 }
@@ -92,9 +99,17 @@
     margin: 10px;
 }
 
+.new-pl i:hover{
+    background-color: white;
+}
+
 .new-pl h5 {
     color: var(--nav-menu-text);
     font-size: small;
+}
+
+.new-pl h5:hover{
+    color: white;
 }
 
 nav li {
@@ -102,6 +117,10 @@ nav li {
     font-size: x-small;
     padding-left: 10px;
     padding-top: 7px;
+}
+
+nav li:hover{
+    color: white;
 }
 
 .app {
@@ -117,6 +136,10 @@ nav li {
 .app h5 {
     color: var(--nav-menu-text);
     font-size: x-small;
+}
+
+.app h2:hover{
+    color: white;
 }
 
 hr {
@@ -190,6 +213,10 @@ header a {
     color: var(--main-text);
 }
 
+.horizontal-menu .col-2:hover{
+    color: white;
+}
+
 #underline{
     border-bottom: 2px solid var(--line);
 }
@@ -257,6 +284,15 @@ footer .text {
     padding-left: 5px;
     padding-right: 40px;
     font-size: x-small;
+}
+
+#track-name{
+    color: var(--nav-menu-text);
+}
+
+#track-name:hover{
+    color: white;
+    text-decoration: underline;
 }
 
 footer .fa-folder {
