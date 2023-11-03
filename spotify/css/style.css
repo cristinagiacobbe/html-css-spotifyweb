@@ -157,7 +157,7 @@ hr {
 
 .profile img {
     width: 10%;
-    margin: 0 10px;
+    margin: 0 10px 5px 10px;
     background-color: var(--nav-menu-text);
     border-radius: 50%;
 }
@@ -549,14 +549,19 @@ footer .fa-folder {
         padding: 5px;
         ;
     }
+
+    .left-foot.icons {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 552px) {
-    .logo-large img{
+    .logo-large img {
         display: none;
     }
 
-    .logo-small img{
+    .logo-small img {
         display: inline-block;
     }
 
@@ -575,6 +580,7 @@ footer .fa-folder {
 
     .profile {
         margin-top: 15px;
+        margin-bottom: 10px;
     }
 }
 
