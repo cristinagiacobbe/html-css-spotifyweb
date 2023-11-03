@@ -299,6 +299,16 @@ footer .fa-folder {
     padding: 0 10px;
 }
 
+.fa-regular.fa-heart, .fa-regular.fa-folder{
+    color: var(--nav-menu-text);
+}
+.fa-regular.fa-heart:hover{
+    color: white;
+}
+
+.fa-regular.fa-folder:hover{
+    color: white;
+}
 /* central footer */
 .central-footer {
     flex-direction: column;
@@ -349,6 +359,29 @@ footer .fa-folder {
     left: 0;
 }
 
+.cursor-time{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: -2.5px;
+    left: 100px;
+    display: none;    
+}
+
+.up-border:hover{
+    border: 3px solid var(--line);
+    .cursor-time {
+        display:block;
+    }
+}    
+
+.central-foot .fa-circle-play:hover{
+    transform: scale(1.5);
+    padding-left: 5px;
+}
+
 /* right-footer */
 .right-footer {
     align-items: center;
@@ -374,6 +407,26 @@ footer .fa-folder {
     width: 30px;
 }
 
+.rf.up-border:hover{
+    border: 3px solid var(--line)
+}
+
+.cursor-volume{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: -2.5px;
+    left: 30px;
+    display: none;    
+}
+
+.rf.under-border:hover{
+    .cursor-volume{
+        display: inline;
+    }
+}
 /* #endregion footer */
 
 
