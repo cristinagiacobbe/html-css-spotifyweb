@@ -234,6 +234,25 @@ header a {
     padding: 5px;
 }
 
+.card{
+    position: relative;
+}
+.card i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: scale(3);
+    color: white;
+    opacity: 0;
+}
+.card:hover{
+    opacity: 0.7;
+}
+
+.card:hover i{
+    opacity: 1;
+}
+
 main .title {
     color: white;
     font-weight: bold;
