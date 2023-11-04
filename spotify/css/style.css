@@ -38,7 +38,7 @@
 /* #region nav */
 .nav-container {
     width: 200px;
-    height: calc(100% - 60px);
+    height: calc(100Vh - 60px);
     background-color: black;
     position: absolute;
     top: 0;
@@ -172,7 +172,7 @@ hr {
 /* #region header */
 .header-container {
     width: 100%;
-    min-width: 750pxx;
+    min-width: 750px;
     height: 60px;
     background-color: var(--header-bg);
     justify-content: end;
@@ -581,6 +581,16 @@ footer .fa-folder {
     .profile {
         margin-top: 15px;
         margin-bottom: 10px;
+    }
+    .nav-container{
+        max-width: 50px;
+    }
+    .logo-small img{
+        min-width: 50px;
+        
+        }
+    .cta img{
+        min-width: 20px;
     }
 }
 
