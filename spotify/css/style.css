@@ -50,6 +50,21 @@
 .logo-large img {
     width: 70%;
     padding: 10px;
+    animation-name: loganimation;
+    animation-duration: 4s;
+}
+
+@keyframes loganimation{
+ 0% {
+transform: translate(0px, 0px); 
+}
+50% {
+transform: translate(0px, 400px);    
+width: 110%;
+}
+75%{
+    transform: translate(0px, 0px);     
+}
 }
 
 .logo-small img {
@@ -177,6 +192,20 @@ hr {
     background-color: var(--header-bg);
     justify-content: end;
     align-items: center;
+}
+.welcome{
+    color: blue;
+    margin: auto;
+    animation: appear;
+    animation-duration: 4s;
+    font-size: 0;
+    animation-delay: 4s;
+}
+
+@keyframes appear{
+    0% {font-size: 0;}
+    50% {font-size: 1rem;}
+    100% {font-size: 0;}
 }
 
 header a {
