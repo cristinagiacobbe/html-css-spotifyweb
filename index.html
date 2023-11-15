@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-web</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="">
+
+    <!-- nav - vertical menu -->
+    <nav>
+        <div class="nav-container d-flex">
+            <div class="nav-top">
+                <div class="logo-large">
+                    <img src="./img/logo.svg" alt="logo-large">
+                </div>
+                <div class="logo-small">
+                    <img src="./img/logo-small.svg" alt="logo-small">
+                </div>
+                <div class="nav-cta">
+                    <div class="cta home d-flex">
+                        <img src="./img/home.svg" alt="home">
+                        <h5>Home</h5>
+                    </div>
+                    <div class="cta search d-flex">
+                        <img src="./img/search.svg" alt="search">
+                        <h5>Cerca</h5>
+                    </div>
+                    <div class="cta library d-flex">
+                        <img src="./img/libreria.svg" alt="library">
+                        <h5>La tua libreria</h5>
+                    </div>
+                </div>
+                <div class="nav-playlist">
+                    <h5 id="playlist">playlist</h5>
+                    <div class="new-pl d-flex">
+                        <i class="fa-solid fa-plus"></i>
+                        <h5>Crea Playlist</h5>
+                    </div>
+                    <ul>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="nav-bottom">
+                <div class="app d-flex">
+                    <img src="./img/download.svg" alt="download">
+                    <h5>Installa app</h5>
+                </div>
+                <hr>
+                <div class="profile d-flex">
+                    <img src="./img/profile.svg" alt="profile">
+                    <h5>John Doe</h5>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- header (horizontal bar) -->
+        <header>
+            <div class="header-container d-flex">
+                <div class="welcome">
+                    <h1>Welcome on spotify</h1>
+                </div>
+                <div class="up-grade">
+                    <a href="">Effettua l'upgrade</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- main - horizontal menu -->
+        <div class="cont-menu ml200">
+            <div class="horizontal-menu d-flex ml200 t-ac">
+                <div class="col-2 col-md-20 col-s-4">in e<span id="underline">vide</span>nza</div>
+                <div class="col-2 col-md-20 col-s-4">podcast</div>
+                <div class="col-2 col-md-20 col-s-4">classifiche</div>
+                <div class="col-2 col-md-20 col-s-4">generi e mood</div>
+                <div class="col-2 col-md-20 col-s-4">nuove uscite</div>
+                <div class="col-2 col-md-20 col-s-4 last">scopri</div>
+            </div>
+        </div>
+        <!-- first row -->
+        <h2 class="ml200">Recently played</h2>
+        <div class="row d-flex ml200">
+            <div class="col-2 col-md-3 col-s-6">
+                <div class="card">
+                    <img src="./img/metal_lifting.jpg" alt="metal">
+                    <i class="cerchio fa-regular fa-circle-play"></i>
+                </div>
+                <h4 class="title t-ac">Heavy Metal</h4>
+                <h5 class="subtitle t-ac">Subtitle</h5>
+            </div>
+            <div class="col-2 col-md-3 col-s-6">
+                <div class="card">
+                    <img src="./img/stranger.jpeg" alt="stranger-things">
+                    <i class="cerchio fa-regular fa-circle-play"></i>
+                </div>
+                <h4 class="title t-ac">Strangers Things, Vol.1 (a Netflix Original Series Soundtrack)</h4>
+                <h5 class="subtitle t-ac">Kyle Dixon & Michale Stein</h5>
+            </div>
+            <div class="col-2 col-md-3 col-s-6">
+                <div class="card">
+                    <img src="./img/aquietplace.jpeg" alt="quiet-place">
+                    <i class="cerchio fa-regular fa-circle-play"></i>
+                </div>
+                <h4 class="title t-ac">A quiet place</h4>
+                <h5 class="subtitle t-ac">Subtitle</h5>
+            </div>
+            <div class="col-2 col-md-3 col-s-6">
+                <div class="card">
+                    <img src="./img/split.jpeg" alt="split">
+                    <i class="cerchio fa-regular fa-circle-play"></i>
+                </div>
+                <h4 class="title t-ac">Split</h4>
+                <h5 class="subtitle t-ac">Subtitle</h5>
+            </div>
+            <div class="col-2 col-md-3 col-s-6">
+                <div class="card">
+                    <img src="./img/cure.jpeg" alt="cure">
+                    <i class="cerchio fa-regular fa-circle-play"></i>
+                </div>
+                <h4 class="title t-ac">A cure for wellness</h4>
+                <h5 class="subtitle t-ac">Subtitle</h5>
+            </div>
+            <div class="col-2 col-md-3 col-s-6">
+                <div class="card">
+                    <img src="./img/sinister.jpeg" alt="sinister">
+                    <i class="cerchio fa-regular fa-circle-play"></i>
+                </div>
+                <h4 class="title t-ac">Sinister</h4>
+                <h5 class="subtitle t-ac">Subtitle</h5>
+            </div>
+        </div>
+        <!-- second row -->
+        <h2 class="ml200">Creato per John Doe</h2>
+        <h4 class="ml200">Più ascolti, più accurati saranno i suggerimenti</h4>
+        <div class="row d-flex ml200">
+            <div class="col-2 col-md-3 col-s-6">
+                <div class="card">
+                    <img src="./img/radar.jpeg" alt="radar">
+                    <i class="cerchio fa-regular fa-circle-play"></i>
+                    <h4 class="title t-ac">Release Radar</h4>
+                </div>
+            </div>
+            <div class="col-2 col-md-3 col-s-6">
+                <div class="card">
+                    <img src="./img/mixdaily.jpeg" alt="mix-daily">
+                    <i class="cerchio fa-regular fa-circle-play"></i>
+                    <h4 class="title t-ac">Daily Mix 1</h4>
+                </div>
+            </div>
+        </div>
+        <!-- third row -->
+        <h2 class="ml200">Artisti più popolari</h2>
+        <h4 class="ml200">Più ascolti, più accurati saranno i suggerimenti</h4>
+        <div class="row d-flex ml200">
+            <div class="col-2 col-md-3 col-s-6">
+                <div class="card circled">
+                    <img src="./img/youg.jpeg" alt="">
+                    <i class="cerchio fa-regular fa-circle-play"></i>
+                    <h4 class="title t-ac">Lana Del Rey</h4>
+                </div>
+            </div>
+            <div class="col-2 col-md-3 col-s-6">
+                <div class="card circled">
+                    <img src="./img/einaudi.jpeg" alt="">
+                    <i class="cerchio fa-regular fa-circle-play"></i>
+                    <h4 class="title t-ac">Ludovico Einaudi</h4>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="foot-container d-flex">
+
+            <div class="left-footer d-flex">
+                <img src="./img/sinister.jpeg" alt="sinister">
+                <div class="text">
+                    <h5>Sinister</h5>
+                    <h5 id="track-name">brano nome</h5>
+                </div>
+                <div class="left-foot icons d-flex">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+            </div>
+
+            <div class="central-footer d-flex">
+
+                <div class="central-foot icons d-flex">
+                    <i class="ctr-icons fa-solid fa-shuffle"></i>
+                    <i class="ctr-icons fa-solid fa-backward-step"></i>
+                    <i class="ctr-icons fa-regular fa-circle-play"></i>
+                    <i class="ctr-icons fa-solid fa-forward-step"></i>
+                    <i class="ctr-icons fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="time-bar d-flex">
+                    <span>0:25</span>
+                    <div class="time-borders">
+                        <div class="cf under-border"></div>
+                        <div class="cf up-border"></div>
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <span>4:35</span>
+                </div>
+            </div>
+
+            <div class="right-footer d-flex">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="volume-borders">
+                    <div class="rf under-border"></div>
+                    <div class="rf up-border"></div>
+                    <i class="fa-solid fa-circle"></i>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

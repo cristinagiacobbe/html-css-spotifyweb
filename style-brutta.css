@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+ 
+}
+.d-flex {
+    display: flex;
+}
+
+.nav-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 20%;
+    height: calc(100vh - 100px);
+    background-color: rgb(143, 28, 28);
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.main-container{
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-color: rgb(104, 104, 251);
+    overflow-y: auto;
+    
+}
+.header-container{    
+    height: 100px;
+    min-width: 100%;    
+    background-color: green;    
+}
+.row{
+    margin-left: 20%;
+    margin-top: 20px;    
+    width: 80%;    
+    background-color: orange;
+    flex-wrap: wrap;
+}
+
+.col-2{
+    width: calc(100% / 12 * 2);
+    border: 1px solid brown;
+    
+}
+.card{
+    width: 100%
+}
+.card img{
+    width: 100%; 
+}
+
+.footer-container{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(247, 185, 92);
+}
+
+@media screen and (max-width: 992px){
+    .row{
+        flex-wrap: wrap;
+    }
+    .col-3{
+        width: calc(100% / 12 * 3);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .col-6{
+        width: calc(100% / 12 * 6);
+    }
+}
+@media screen and (max-width: 576px){
+    .col-6{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+/* <i class="fa-regular fa-heart"></i>
+<i class="fa-regular fa-folder"></i>
+<i class="fa-solid fa-backward-step"></i>
+<i class="fa-solid fa-forward-step"></i>
+<i class="fa-regular fa-circle-play"></i>
+<i class="fa-solid fa-rotate-right"></i>
+<i class="fa-solid fa-shuffle"></i>
+<i class="fa-solid fa-ellipsis-vertical"></i>
+<i class="fa-solid fa-bars"></i>
+<i class="fa-solid fa-display"></i>
+<i class="fa-solid fa-volume-high"></i> */
