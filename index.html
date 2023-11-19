@@ -14,67 +14,62 @@
 </head>
 
 <body class="">
-
-    <!-- nav - vertical menu -->
-    <nav>
-        <div class="nav-container d-flex">
-            <div class="nav-top">
-                <div class="logo-large">
-                    <img src="./img/logo.svg" alt="logo-large">
+    <!-- sidebar (top and bottom) -->
+    <div class="sidebar d-flex">
+        <div class="sidebar-top">
+            <div class="logo-large">
+                <img src="./img/logo.svg" alt="logo-large">
+            </div>
+            <div class="logo-small">
+                <img src="./img/logo-small.svg" alt="logo-small">
+            </div>
+            <div class="sidebar-icons">
+                <div class="icon home d-flex">
+                    <img src="./img/home.svg" alt="home">
+                    <h5>Home</h5>
                 </div>
-                <div class="logo-small">
-                    <img src="./img/logo-small.svg" alt="logo-small">
+                <div class="icon search d-flex">
+                    <img src="./img/search.svg" alt="search">
+                    <h5>Cerca</h5>
                 </div>
-                <div class="nav-cta">
-                    <div class="cta home d-flex">
-                        <img src="./img/home.svg" alt="home">
-                        <h5>Home</h5>
-                    </div>
-                    <div class="cta search d-flex">
-                        <img src="./img/search.svg" alt="search">
-                        <h5>Cerca</h5>
-                    </div>
-                    <div class="cta library d-flex">
-                        <img src="./img/libreria.svg" alt="library">
-                        <h5>La tua libreria</h5>
-                    </div>
-                </div>
-                <div class="nav-playlist">
-                    <h5 id="playlist">playlist</h5>
-                    <div class="new-pl d-flex">
-                        <i class="fa-solid fa-plus"></i>
-                        <h5>Crea Playlist</h5>
-                    </div>
-                    <ul>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                    </ul>
+                <div class="icon library d-flex">
+                    <img src="./img/libreria.svg" alt="library">
+                    <h5>La tua libreria</h5>
                 </div>
             </div>
-
-
-            <div class="nav-bottom">
-                <div class="app d-flex">
-                    <img src="./img/download.svg" alt="download">
-                    <h5>Installa app</h5>
+            <div class="sidebar-playlist">
+                <h5 id="playlist">playlist</h5>
+                <div class="new-pl d-flex">
+                    <i class="fa-solid fa-plus"></i>
+                    <h5>Crea Playlist</h5>
                 </div>
-                <hr>
-                <div class="profile d-flex">
-                    <img src="./img/profile.svg" alt="profile">
-                    <h5>John Doe</h5>
-                </div>
+                <ul>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                </ul>
             </div>
         </div>
-    </nav>
 
+
+        <div class="sidebar-bottom">
+            <div class="app d-flex">
+                <img src="./img/download.svg" alt="download">
+                <h5>Installa app</h5>
+            </div>
+            <hr>
+            <div class="profile d-flex">
+                <img src="./img/profile.svg" alt="profile">
+                <h5>John Doe</h5>
+            </div>
+        </div>
+    </div>
+<!-- main (with header, horizontal menu and three rows) -->
     <main>
-
-        <!-- header (horizontal bar) -->
         <header>
             <div class="header-container d-flex">
                 <div class="welcome">
@@ -86,20 +81,20 @@
             </div>
         </header>
 
-        <!-- main - horizontal menu -->
-        <div class="cont-menu ml200">
-            <div class="horizontal-menu d-flex ml200 t-ac">
-                <div class="col-2 col-md-20 col-s-4">in e<span id="underline">vide</span>nza</div>
-                <div class="col-2 col-md-20 col-s-4">podcast</div>
-                <div class="col-2 col-md-20 col-s-4">classifiche</div>
-                <div class="col-2 col-md-20 col-s-4">generi e mood</div>
-                <div class="col-2 col-md-20 col-s-4">nuove uscite</div>
-                <div class="col-2 col-md-20 col-s-4 last">scopri</div>
+        <div class="cont-menu">
+            <div class="horizontal-menu d-flex t-ac">
+                <div class="col-2 col-md-20 col-s-4 col-xs-3">in e<span id="underline">vide</span>nza</div>
+                <div class="col-2 col-md-20 col-s-4 col-xs-3">podcast</div>
+                <div class="col-2 col-md-20 col-s-4 col-xs-3">classifiche</div>
+                <div class="col-2 col-md-20 col-s-4 col-xs-3">generi e mood</div>
+                <div class="col-2 col-md-20 col-s-4 col-xs-3">nuove uscite</div>
+                <div class="col-2 col-md-20 col-s-4 col-xs-3 last">scopri</div>
             </div>
         </div>
+
         <!-- first row -->
-        <h2 class="ml200">Recently played</h2>
-        <div class="row d-flex ml200">
+        <h2>Recently played</h2>
+        <div class="row d-flex">
             <div class="col-2 col-md-3 col-s-6">
                 <div class="card">
                     <img src="./img/metal_lifting.jpg" alt="metal">
@@ -150,9 +145,9 @@
             </div>
         </div>
         <!-- second row -->
-        <h2 class="ml200">Creato per John Doe</h2>
-        <h4 class="ml200">Più ascolti, più accurati saranno i suggerimenti</h4>
-        <div class="row d-flex ml200">
+        <h2>Creato per John Doe</h2>
+        <h4>Più ascolti, più accurati saranno i suggerimenti</h4>
+        <div class="row d-flex">
             <div class="col-2 col-md-3 col-s-6">
                 <div class="card">
                     <img src="./img/radar.jpeg" alt="radar">
@@ -169,9 +164,9 @@
             </div>
         </div>
         <!-- third row -->
-        <h2 class="ml200">Artisti più popolari</h2>
-        <h4 class="ml200">Più ascolti, più accurati saranno i suggerimenti</h4>
-        <div class="row d-flex ml200">
+        <h2>Artisti più popolari</h2>
+        <h4>Più ascolti, più accurati saranno i suggerimenti</h4>
+        <div class="row d-flex">
             <div class="col-2 col-md-3 col-s-6">
                 <div class="card circled">
                     <img src="./img/youg.jpeg" alt="">
@@ -188,7 +183,7 @@
             </div>
         </div>
     </main>
-    <!-- footer -->
+<!-- footer -->
     <footer>
         <div class="foot-container d-flex">
 
@@ -225,21 +220,22 @@
             </div>
 
             <div class="right-footer d-flex">
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-                <i class="fa-solid fa-bars"></i>
-                <i class="fa-solid fa-display"></i>
-                <i class="fa-solid fa-volume-high"></i>
+                <div class="right-foot icons d-flex">
+                    <div class="ellipsis-bar">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <i class="fa-solid fa-display"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
                 <div class="volume-borders">
                     <div class="rf under-border"></div>
                     <div class="rf up-border"></div>
                     <i class="fa-solid fa-circle"></i>
                 </div>
             </div>
-
         </div>
-    </footer>
-
-
+    </footer>  
 
 </body>
 
