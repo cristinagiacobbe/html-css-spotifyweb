@@ -546,6 +546,12 @@ footer .fa-folder {
         margin: auto;
         margin-top: 10px;
     }
+    .col-2{
+        display: none;
+    }
+    main h2{
+        padding-top: 80px;
+    }
 }
 
 @media screen and (max-width: 768px) {
