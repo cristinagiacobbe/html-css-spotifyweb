@@ -245,22 +245,26 @@ main h4 {
 
 .card img {
     width: 100%;
-    padding: 5px;
+    padding: 0 5px;
 }
 
 .card {
     position: relative;
 }
 
-.card i {
+.play-box {
+    width: 45px;
+    height: 45px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: scale(3);
+    transform: translate(-50%, -50%);       
+}
+.play-box i{
+    font-size: 45px;
     color: white;
     opacity: 0;
 }
-
 .card:hover {
     opacity: 0.7;
 }
